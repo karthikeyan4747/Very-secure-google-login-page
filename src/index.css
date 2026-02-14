@@ -13,7 +13,7 @@ body{
 
 #arrowimg{
   position: absolute;
-  width: 150px;
+  width: 120px;
   bottom: 290px;
   
 }
@@ -21,7 +21,7 @@ body{
 #okgif{
   position: absolute;
   width: 130px;
-  bottom: 190px;
+  bottom: 120px;
 }
 
 #devious{
