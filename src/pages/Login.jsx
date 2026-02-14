@@ -8,7 +8,7 @@ import mouse from "../assets/1.gif"
 import smily from "../assets/2.jpg"
 import devious_smily from "../assets/3.jpg"
 import muhehe from "../assets/muhehehe.mp3"
-
+import mew from "../assets/6.gif"
 function Login() {
     const [values, setValues] = useState(null)
 
@@ -21,7 +21,9 @@ function Login() {
 
     return (
         <>
+        <h1>Very Very Safe i wont steal your password or something</h1>
             <div className="login">
+            <div className="googol">
                 <h1 id="login-h1">Login</h1>
                 <GoogleLogin shape="pill" width={"90px"} onSuccess={(credentialResponse) => {
                     const decoded = jwtDecode(credentialResponse.credential)
@@ -29,15 +31,15 @@ function Login() {
                     console.log(decoded)
                     playSound()
                 }} />
-
-
+                </div>
+                <img src={mew} id="mew" />
                 <img src={arrow} id="arrowimg" />
                 <img src={ok} id="okgif" />
                 {values && (
                     <>
                         <div id="values">
-                        <h2>{values.name}</h2>
-                        <h2>{values.email}</h2>
+                        <h2 className="valuess">{values.name}</h2>
+                        <h2 className="valuess">{values.email}</h2>
                         <img src={mouse} alt="profile picture" width="100" />
                         <img src={smily}></img>
                         <img src={devious_smily}></img>
