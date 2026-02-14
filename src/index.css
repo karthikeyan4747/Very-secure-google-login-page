@@ -1,0 +1,31 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+  background-color: rgb(255, 0, 0);
+}
+
+#arrowimg{
+  position: absolute;
+  width: 150px;
+  bottom: 290px;
+  
+}
+
+#okgif{
+  position: absolute;
+  width: 130px;
+  bottom: 190px;
+}
+
+#devious{
+  width: 200px;
+  position:absolute;
+  top: 250px;
+}
